@@ -3,6 +3,7 @@ Below is a sample problem
 
   //code here for sayHi
 
+
    sayHi('Hi Katie', function(thingToSay){
       alert(thingToSay);
    });
@@ -25,11 +26,15 @@ and what you should write is the favNum function that makes the code above work,
 
 
   //Code Here for first
+  var first = function(str, cb){
+    cb(names.shift());
+  }
   
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 first(names, function(firstName){
   console.log('The first name in names is ', firstName)
 });
+
 
 
 
@@ -39,6 +44,9 @@ first(names, function(firstName){
 
 
   //Code Here for last
+var last = function(str, cb){
+  cb(names.shift());
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 last(names, function(lastName){
